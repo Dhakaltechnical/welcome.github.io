@@ -1,0 +1,99 @@
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)), url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+nav{
+    height: 15vh;width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    color: white; display: flex;justify-content: space-between;
+    align-items: center;text-transform: uppercase;
+}
+nav .logo{
+    width: 25%;text-align: center;
+}
+nav .menu{
+    width: 40%;justify-content: space-around;display: flex;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav .menu a:hover{
+    color: lawngreen;
+}
+main{
+  width: 100%;
+  height: 65vh;
+  color: white;
+  display: flex;align-items: center;
+  text-align: center;justify-content: center;
+}
+section{
+
+}
+section h3{
+font-size: 35px;font-weight: 200;letter-spacing: 2px;
+text-shadow: 1px 2px 1px black;
+}
+section h1{
+    margin: 20px 0 30px 0;
+    font-size: 65px;font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+section p{
+    font-size:25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 2px 5px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+section .btnone{
+    background-color:lawngreen;
+    color: black;
+}
+.btnone:hover{
+    background-color:blue;
+    color:white;
+}
+section .btntwo{
+    background-color: white;
+    color:black;
+}
+.btntwo:hover{
+    background-color:rebeccapurple;
+    color: white;
+}
+.content_change:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color:lawngreen;
+}
+@keyframes changetext{
+    0%{content: "Kathmandu";}
+    20%{content: "Pokhara";}
+    35%{content: "Bandipur";}
+    60%{content:"Nwakot";}
+    80%{content: "Gorkha";}
+    100%{content: "Mustang";}
+}
